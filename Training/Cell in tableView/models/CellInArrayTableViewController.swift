@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
 
 class CellInArrayTableViewController: UITableViewController {
     
@@ -14,6 +17,7 @@ class CellInArrayTableViewController: UITableViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+//        tryThis()
     }
     
     var nameArray = CellStruct.importName()
@@ -79,7 +83,32 @@ class CellInArrayTableViewController: UITableViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
+//    func tryThis(){
+//        let apiKey = "277fe6bf9dmsh04d12725155e831p10546fjsnfdf85fdaf29e"
+//        let apiUrl = URL(string : "https://movies-tvshows-data-imdb.p.rapidapi.com/?page=1&type=get-trending-movies")
+//
+//        let headers : HTTPHeaders = [
+//            "x-rapidapi-host": "movies-tvshows-data-imdb.p.rapidapi.com",
+//            "x-rapidapi-key": "277fe6bf9dmsh04d12725155e831p10546fjsnfdf85fdaf29e"
+//        ]
+//
+//            //url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON
+//            AF.request(apiUrl!, method: .get, encoding: JSONEncoding.default, headers: headers)
+//                        .responseJSON { response in
+//
+//                            print(response)
+//                            var titleArray = [String]()
+//                            var yearArray = [String]()
+//                            let json = try? JSON(data: response.data!)
+//                            for i in 0...19{
+//                                let title = json!["movie_results"][i]["title"].string
+//                                let year = json!["movie_results"][i]["year"].string
+//                                titleArray.append(title!)
+//                                yearArray.append(year!)
+//                                StructCell.init(titles: titleArray, subtitle: yearArray)
+//                            }
+//                        }
+//                }
 }
 
 
