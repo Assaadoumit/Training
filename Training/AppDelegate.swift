@@ -28,46 +28,39 @@ import UserNotifications
             
         }
         
-    
-    
-        
-//        UIApplication.shared.applicationIconBadgeNumber = 0
-        
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "ReceivedPushNotification"), object: userInfo)
         
-//
+        //
         completionHandler(UIBackgroundFetchResult.newData)
     }
     func messaging(_ messaging: Messaging, didReceiveremoteMessage: MessagingRemoteMessage) {
-        
-        
     }
     
-//
+    //
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         if #available(iOS 10.0, *) {
-          // For iOS 10 display notification (sent via APNS)
-          UNUserNotificationCenter.current().delegate = self
-
-          let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-          UNUserNotificationCenter.current().requestAuthorization(
-            options: authOptions,
-            completionHandler: {_, _ in })
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self
+            
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
         } else {
-          let settings: UIUserNotificationSettings =
-          UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-          application.registerUserNotificationSettings(settings)
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
         }
-
+        
         application.registerForRemoteNotifications()
-
+        
         Messaging.messaging().delegate = self
         
         return true
     }
-//
+    //
     // MARK: UISceneSession Lifecycle
     
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -87,44 +80,41 @@ import UserNotifications
 
 @available(iOS 10, *)
 extension AppDelegate : UNUserNotificationCenterDelegate {
-// Receive displayed notifications for iOS 10 devices.
-func userNotificationCenter(_ center: UNUserNotificationCenter,
-                            willPresent notification: UNNotification,
-                            withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-    let userInfo = notification.request.content.userInfo
     
-    // With swizzling disabled you must let Messaging know about the message, for Analytics
-    Messaging.messaging().appDidReceiveMessage(userInfo)
-
-    
-    if let messageID = userInfo[gcmMessageIDKey] {
-        print("Message ID: \(messageID)")
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        let userInfo = notification.request.content.userInfo
+        
+        
+        Messaging.messaging().appDidReceiveMessage(userInfo)
+        
+        
+        if let messageID = userInfo[gcmMessageIDKey] {
+            print("Message ID: \(messageID)")
+        }
+        
+        
+        print("user info is :" ,userInfo)
+        completionHandler([.alert, .sound])
     }
     
-    // Print full message.
-    print("user info is :" ,userInfo)
     
-    
-    // Change this to your preferred presentation option
-    completionHandler([.alert, .sound])
-}
-
-
 }
 extension AppDelegate : MessagingDelegate {
-func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-    print("Firebase registration token: \(fcmToken)")
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+        
+        let dataDict:[String: String] = ["token": fcmToken]
+        NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
+    }
     
-    let dataDict:[String: String] = ["token": fcmToken]
-    NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
-}
-
-func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
-    print("Message Data", remoteMessage.appData)
-     Messaging.messaging().shouldEstablishDirectChannel = true
-   
- }
-
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        print("Message Data", remoteMessage.appData)
+        Messaging.messaging().shouldEstablishDirectChannel = true
+        
+    }
+    
 }
 
 
