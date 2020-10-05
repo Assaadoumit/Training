@@ -27,6 +27,17 @@ class StaticTableViewController: UITableViewController {
 //        // #warning Incomplete implementation, return the number of rows
 //        return 0
 //    }
-
+    
+    @IBAction func switchCase(_ sender : UISwitch){
+        if(sender.isOn){
+            print("on")
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+        else{
+            print("Off")
+            UIApplication.shared.unregisterForRemoteNotifications()
+        }
+    }
+    
     
 }

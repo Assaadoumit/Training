@@ -131,6 +131,9 @@
                                                         </label>
                                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-it-nox">
                                                             <rect key="frame" x="299" y="0.0" width="51" height="31"/>
+                                                            <connections>
+                                                                <action selector="switchCase:" destination="Vgb-yg-7T2" eventType="touchUpInside" id="cTp-2A-tX4"/>
+                                                            </connections>
                                                         </switch>
                                                     </subviews>
                                                     <constraints>
