@@ -19,6 +19,7 @@
 		800BEA2D2516B83B00E60DE5 /* TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BEA2C2516B83B00E60DE5 /* TrainingTests.swift */; };
 		800BEA382516B83B00E60DE5 /* TrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BEA372516B83B00E60DE5 /* TrainingUITests.swift */; };
 		800BEA502516BB8400E60DE5 /* CellInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800BEA4F2516BB8400E60DE5 /* CellInArray.swift */; };
+		800CDAFC252A9668001C4DE4 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDAFB252A9667001C4DE4 /* StaticTableViewController.swift */; };
 		801AFD152518A2D600E9D1B2 /* FirebaseAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AFD142518A2D500E9D1B2 /* FirebaseAuthenticationViewController.swift */; };
 		801AFD502519EC1F00E9D1B2 /* CellInArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AFD4F2519EC1F00E9D1B2 /* CellInArrayTableViewController.swift */; };
 		80C01838251FDC7800CB8B7F /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */; };
@@ -71,6 +72,7 @@
 		800BEA372516B83B00E60DE5 /* TrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingUITests.swift; sourceTree = "<group>"; };
 		800BEA392516B83B00E60DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		800BEA4F2516BB8400E60DE5 /* CellInArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInArray.swift; sourceTree = "<group>"; };
+		800CDAFB252A9667001C4DE4 /* StaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
 		801AFD142518A2D500E9D1B2 /* FirebaseAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationViewController.swift; sourceTree = "<group>"; };
 		801AFD4F2519EC1F00E9D1B2 /* CellInArrayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInArrayTableViewController.swift; sourceTree = "<group>"; };
 		80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				800BEA202516B83A00E60DE5 /* LaunchScreen.storyboard */,
 				800BEA232516B83A00E60DE5 /* Info.plist */,
 				80076C462516C1A90043B22D /* GoogleService-Info.plist */,
+				800CDAF7252A9238001C4DE4 /* Static TableView */,
 				80C01836251FDC5600CB8B7F /* Local Notification */,
 				801AFD4E2519EBF000E9D1B2 /* Cell in tableView */,
 				801AFD2E2518C36C00E9D1B2 /* Phone Auth */,
@@ -197,6 +200,14 @@
 				801AFD4F2519EC1F00E9D1B2 /* CellInArrayTableViewController.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		800CDAF7252A9238001C4DE4 /* Static TableView */ = {
+			isa = PBXGroup;
+			children = (
+				800CDAFB252A9667001C4DE4 /* StaticTableViewController.swift */,
+			);
+			path = "Static TableView";
 			sourceTree = "<group>";
 		};
 		801AFD2E2518C36C00E9D1B2 /* Phone Auth */ = {
@@ -518,6 +529,7 @@
 				80ED323E251E027D0034915A /* CellData.swift in Sources */,
 				80ED31B3251A04680034915A /* TableViewController.swift in Sources */,
 				80ED3214251CB56D0034915A /* DynamicCellViewController.swift in Sources */,
+				800CDAFC252A9668001C4DE4 /* StaticTableViewController.swift in Sources */,
 				800BEA182516B83900E60DE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

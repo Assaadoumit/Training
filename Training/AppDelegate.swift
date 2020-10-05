@@ -22,7 +22,7 @@ import UserNotifications
         
         Messaging.messaging().appDidReceiveMessage(userInfo)
         
-        // Print message ID.
+
         if let messageID = userInfo[gcmMessageIDKey] {
             print("Message ID: \(messageID)")
             
