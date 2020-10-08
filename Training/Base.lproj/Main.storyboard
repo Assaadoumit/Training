@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I68-EV-hXQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B54-ZX-Czt">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -438,7 +438,7 @@
                             <constraint firstItem="WlT-68-Pox" firstAttribute="centerY" secondItem="jLo-PH-p0x" secondAttribute="centerY" id="y0u-fA-0oQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Kds-ay-OKC"/>
+                    <navigationItem key="navigationItem" title="Second View Controller" id="Kds-ay-OKC"/>
                     <connections>
                         <outlet property="nameTextField" destination="0Ex-2W-Ytx" id="l3c-Bs-9Nm"/>
                         <outlet property="sendNotifiButoon" destination="WlT-68-Pox" id="ozk-sn-yFP"/>
@@ -456,7 +456,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-JX-y1C">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-JX-y1C">
                                 <rect key="frame" x="42" y="195" width="295" height="161"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="203" translatesAutoresizingMaskIntoConstraints="NO" id="CZ2-fR-KJN">
@@ -464,32 +464,73 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-lL-Gvf">
                                                 <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="5wu-Ar-8e7"/>
+                                                    <constraint firstAttribute="height" constant="30" id="yn5-70-bOI"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hll-t1-num">
                                                 <rect key="frame" x="249" y="0.0" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="9eH-0h-r6B"/>
+                                                    <constraint firstAttribute="width" constant="46" id="rOL-tL-lfP"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hll-t1-num" secondAttribute="bottom" id="7en-Bf-zVQ"/>
+                                            <constraint firstItem="Xoe-lL-Gvf" firstAttribute="top" secondItem="CZ2-fR-KJN" secondAttribute="top" id="HOf-yF-Svu"/>
+                                            <constraint firstItem="hll-t1-num" firstAttribute="top" secondItem="CZ2-fR-KJN" secondAttribute="top" id="hDa-ak-gto"/>
+                                            <constraint firstAttribute="trailing" secondItem="hll-t1-num" secondAttribute="trailing" id="ivd-k9-DlE"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xoe-lL-Gvf" secondAttribute="bottom" id="kct-iu-PEc"/>
+                                            <constraint firstItem="Xoe-lL-Gvf" firstAttribute="leading" secondItem="CZ2-fR-KJN" secondAttribute="leading" id="ogI-gC-AOn"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="203" translatesAutoresizingMaskIntoConstraints="NO" id="5zt-Vm-KVg">
                                         <rect key="frame" x="0.0" y="131" width="295" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phQ-EZ-LT7">
                                                 <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="2vM-YH-Pfz"/>
+                                                    <constraint firstAttribute="height" constant="30" id="yoi-et-qnp"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktr-Pa-ZuA">
                                                 <rect key="frame" x="249" y="0.0" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="LOh-fL-K00"/>
+                                                    <constraint firstAttribute="width" constant="46" id="sni-CX-T2s"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ktr-Pa-ZuA" secondAttribute="trailing" id="7iJ-kb-B0u"/>
+                                            <constraint firstAttribute="bottom" secondItem="ktr-Pa-ZuA" secondAttribute="bottom" id="ZAt-jH-vph"/>
+                                            <constraint firstItem="phQ-EZ-LT7" firstAttribute="top" secondItem="5zt-Vm-KVg" secondAttribute="top" id="iQE-V5-i28"/>
+                                            <constraint firstAttribute="bottom" secondItem="phQ-EZ-LT7" secondAttribute="bottom" id="lpF-Dr-Boc"/>
+                                            <constraint firstItem="phQ-EZ-LT7" firstAttribute="leading" secondItem="5zt-Vm-KVg" secondAttribute="leading" id="sGW-xt-NZ0"/>
+                                            <constraint firstItem="ktr-Pa-ZuA" firstAttribute="top" secondItem="5zt-Vm-KVg" secondAttribute="top" id="sia-ce-su7"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="DqF-qC-dfw"/>
+                                    <constraint firstAttribute="height" constant="161" id="fJ3-eY-5WT"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ctj-g0-9BF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IeS-JX-y1C" firstAttribute="leading" secondItem="ctj-g0-9BF" secondAttribute="leading" constant="42" id="C1W-5J-Wbj"/>
+                            <constraint firstItem="ctj-g0-9BF" firstAttribute="trailing" secondItem="IeS-JX-y1C" secondAttribute="trailing" constant="38" id="cTL-Ib-hCU"/>
+                            <constraint firstItem="IeS-JX-y1C" firstAttribute="top" secondItem="ctj-g0-9BF" secondAttribute="top" constant="107" id="y6N-tB-Jlw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stackview" id="BuZ-Jz-5ND"/>
                 </viewController>
