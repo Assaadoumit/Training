@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import MyLibrary
+
+
 
 class FirstScrennTableView: UITableViewController {
 
@@ -13,7 +16,14 @@ class FirstScrennTableView: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-
+        
+        
+        let randomString = randomGenerator.string()
+        let randomInt = randomGenerator.number()
+        
+        print(randomInt)
+        print(randomString)
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -25,6 +25,7 @@
 		800CDB17252FC58C001C4DE4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 800CDB16252FC58C001C4DE4 /* Alamofire */; };
 		801AFD152518A2D600E9D1B2 /* FirebaseAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AFD142518A2D500E9D1B2 /* FirebaseAuthenticationViewController.swift */; };
 		801AFD502519EC1F00E9D1B2 /* CellInArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AFD4F2519EC1F00E9D1B2 /* CellInArrayTableViewController.swift */; };
+		801D105C252FD76800B23168 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 801D105B252FD76800B23168 /* MyLibrary */; };
 		80C01838251FDC7800CB8B7F /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */; };
 		80ED319C2519F8E50034915A /* CellInarrayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED319B2519F8E50034915A /* CellInarrayTableViewCell.swift */; };
 		80ED31A9251A04430034915A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED31A7251A04430034915A /* TableViewCell.swift */; };
@@ -80,6 +81,7 @@
 		800CDB10252F0B76001C4DE4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		801AFD142518A2D500E9D1B2 /* FirebaseAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationViewController.swift; sourceTree = "<group>"; };
 		801AFD4F2519EC1F00E9D1B2 /* CellInArrayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInArrayTableViewController.swift; sourceTree = "<group>"; };
+		801D103F252FD5B800B23168 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyLibrary; sourceTree = "<group>"; };
 		80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 		80C018422521E00300CB8B7F /* Training.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Training.entitlements; sourceTree = "<group>"; };
 		80ED319B2519F8E50034915A /* CellInarrayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInarrayTableViewCell.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801D105C252FD76800B23168 /* MyLibrary in Frameworks */,
 				DBEF362EBFC8D1AFB5BDD314 /* Pods_Training.framework in Frameworks */,
 				800CDB17252FC58C001C4DE4 /* Alamofire in Frameworks */,
 			);
@@ -139,6 +142,7 @@
 		800BEA092516B83900E60DE5 = {
 			isa = PBXGroup;
 			children = (
+				801D103F252FD5B800B23168 /* MyLibrary */,
 				800BEA142516B83900E60DE5 /* Training */,
 				800BEA2B2516B83A00E60DE5 /* TrainingTests */,
 				800BEA362516B83B00E60DE5 /* TrainingUITests */,
@@ -312,6 +316,7 @@
 			name = Training;
 			packageProductDependencies = (
 				800CDB16252FC58C001C4DE4 /* Alamofire */,
+				801D105B252FD76800B23168 /* MyLibrary */,
 			);
 			productName = Training;
 			productReference = 800BEA122516B83900E60DE5 /* Training.app */;
@@ -908,6 +913,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 800CDB15252FC58C001C4DE4 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		801D105B252FD76800B23168 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
