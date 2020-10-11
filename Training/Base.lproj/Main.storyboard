@@ -448,6 +448,65 @@
             </objects>
             <point key="canvasLocation" x="8364" y="1267"/>
         </scene>
+        <!--Delegate-->
+        <scene sceneID="4so-KR-lB2">
+            <objects>
+                <viewController id="G48-7n-NKk" customClass="DelegateViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t7p-p8-Ina">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYD-Vb-Nza">
+                                <rect key="frame" x="83" y="236" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hs-a8-ziK">
+                                <rect key="frame" x="28" y="391" width="318" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButonPressed:" destination="G48-7n-NKk" eventType="touchUpInside" id="Dh3-Ql-RrN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="brc-Oi-XnP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delegate" id="L49-tC-s8k"/>
+                    <connections>
+                        <outlet property="label" destination="tYD-Vb-Nza" id="mLo-wh-VlW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBR-Tz-uN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8364" y="405.66502463054189"/>
+        </scene>
+        <!--Delegate Second Screen-->
+        <scene sceneID="8xQ-dX-88K">
+            <objects>
+                <viewController id="vBe-eg-RBC" customClass="DelegateSecondViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OUb-jl-9Ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHc-9d-lba">
+                                <rect key="frame" x="137" y="391" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Delegate"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Ch-gD-UIW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delegate Second Screen" id="7Wp-8P-fa9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8a-UG-go0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10921" y="407"/>
+        </scene>
         <!--Stackview-->
         <scene sceneID="1pe-za-jH5">
             <objects>
@@ -897,6 +956,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f47-ei-rwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="937" y="1267"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZrU-d9-bcQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Uf-g3-sKH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2dt-M4-DNQ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="G48-7n-NKk" kind="relationship" relationship="rootViewController" id="mZm-p5-zOg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALn-Kb-J5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7246" y="406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9FV-6t-qQG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dqg-VF-qgz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qhj-D0-iG2">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vBe-eg-RBC" kind="relationship" relationship="rootViewController" id="Mhe-eA-zbB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsS-Dd-cMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9759" y="406"/>
         </scene>
     </scenes>
     <resources>

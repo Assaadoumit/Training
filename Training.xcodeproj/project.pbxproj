@@ -26,6 +26,8 @@
 		801AFD152518A2D600E9D1B2 /* FirebaseAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AFD142518A2D500E9D1B2 /* FirebaseAuthenticationViewController.swift */; };
 		801AFD502519EC1F00E9D1B2 /* CellInArrayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AFD4F2519EC1F00E9D1B2 /* CellInArrayTableViewController.swift */; };
 		801D105C252FD76800B23168 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 801D105B252FD76800B23168 /* MyLibrary */; };
+		801D10672533CE6100B23168 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D10662533CE6100B23168 /* DelegateViewController.swift */; };
+		801D106C2533CE7500B23168 /* DelegateSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D106B2533CE7500B23168 /* DelegateSecondViewController.swift */; };
 		80C01838251FDC7800CB8B7F /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */; };
 		80ED319C2519F8E50034915A /* CellInarrayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED319B2519F8E50034915A /* CellInarrayTableViewCell.swift */; };
 		80ED31A9251A04430034915A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED31A7251A04430034915A /* TableViewCell.swift */; };
@@ -82,6 +84,8 @@
 		801AFD142518A2D500E9D1B2 /* FirebaseAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationViewController.swift; sourceTree = "<group>"; };
 		801AFD4F2519EC1F00E9D1B2 /* CellInArrayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInArrayTableViewController.swift; sourceTree = "<group>"; };
 		801D103F252FD5B800B23168 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyLibrary; sourceTree = "<group>"; };
+		801D10662533CE6100B23168 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		801D106B2533CE7500B23168 /* DelegateSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateSecondViewController.swift; sourceTree = "<group>"; };
 		80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 		80C018422521E00300CB8B7F /* Training.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Training.entitlements; sourceTree = "<group>"; };
 		80ED319B2519F8E50034915A /* CellInarrayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInarrayTableViewCell.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				800BEA232516B83A00E60DE5 /* Info.plist */,
 				80076C462516C1A90043B22D /* GoogleService-Info.plist */,
 				800CDB07252F04A5001C4DE4 /* In app notification */,
+				801D10622533CE3400B23168 /* Delegates */,
 				800CDAF7252A9238001C4DE4 /* Static TableView */,
 				80C01836251FDC5600CB8B7F /* Local Notification */,
 				801AFD4E2519EBF000E9D1B2 /* Cell in tableView */,
@@ -244,6 +249,15 @@
 				800BEA4B2516BB4C00E60DE5 /* models */,
 			);
 			path = "Cell in tableView";
+			sourceTree = "<group>";
+		};
+		801D10622533CE3400B23168 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				801D10662533CE6100B23168 /* DelegateViewController.swift */,
+				801D106B2533CE7500B23168 /* DelegateSecondViewController.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		80C01836251FDC5600CB8B7F /* Local Notification */ = {
@@ -548,6 +562,8 @@
 				80C01838251FDC7800CB8B7F /* LocalNotificationViewController.swift in Sources */,
 				80ED31A9251A04430034915A /* TableViewCell.swift in Sources */,
 				801AFD502519EC1F00E9D1B2 /* CellInArrayTableViewController.swift in Sources */,
+				801D10672533CE6100B23168 /* DelegateViewController.swift in Sources */,
+				801D106C2533CE7500B23168 /* DelegateSecondViewController.swift in Sources */,
 				80ED31BB251A06140034915A /* CellModel.swift in Sources */,
 				801AFD152518A2D600E9D1B2 /* FirebaseAuthenticationViewController.swift in Sources */,
 				800BEA502516BB8400E60DE5 /* CellInArray.swift in Sources */,
