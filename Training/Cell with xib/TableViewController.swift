@@ -11,6 +11,7 @@ class TableViewController: UITableViewController {
     
     var namesArray = [StructCell]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

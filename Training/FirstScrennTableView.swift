@@ -18,7 +18,7 @@ class FirstScrennTableView: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-       
+        
         let randomString = randomGenerator.string()
         let randomInt = randomGenerator.number()
         print(randomInt)
@@ -42,45 +42,45 @@ class FirstScrennTableView: UITableViewController {
         if indexPath.row == 0 {
             let vc = self.storyboard?.instantiateViewController(identifier: "DynamicCell") as! DynamicCellViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         //CellWithxib
         
         if indexPath.row == 1 {
             let vc = self.storyboard?.instantiateViewController(identifier: "CellInArrayTableViewController") as! CellInArrayTableViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         //CellInTableView
         if indexPath.row == 2 {
             let vc = self.storyboard?.instantiateViewController(identifier: "FirebaseAuthenticationViewController") as! FirebaseAuthenticationViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         if indexPath.row == 3 {
             let vc = self.storyboard?.instantiateViewController(identifier: "CellInTableView") as! TableViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         //LocalNotificationViewController
         if indexPath.row == 4 {
             let vc = self.storyboard?.instantiateViewController(identifier: "LocalNotificationViewController") as! LocalNotificationViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         if indexPath.row == 5 {
             let vc = self.storyboard?.instantiateViewController(identifier: "StaticTableViewController") as! StaticTableViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         //Stackview
         if indexPath.row == 6 {
             let vc = self.storyboard?.instantiateViewController(identifier: "Stackview") as! StackviewViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         
         if indexPath.row == 7 {
             let vc = self.storyboard?.instantiateViewController(identifier: "DelegateViewController") as! DelegateViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         if indexPath.row == 8 {
             let vc = self.storyboard?.instantiateViewController(identifier: "InAppNotificationViewController") as! InAppNotificationViewController
             self.navigationController!.pushViewController(vc, animated: true);
-            }
+        }
         
     }
     
