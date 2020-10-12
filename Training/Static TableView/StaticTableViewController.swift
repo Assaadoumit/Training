@@ -41,12 +41,6 @@ class StaticTableViewController: UITableViewController {
     //    }
 //
 //    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell1 = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
-//        let cell2 = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath)
-//        let cell3 = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath)
-//        let cell4 = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath)
-//        let cell5 = tableView.dequeueReusableCell(withIdentifier: "cell5", for: indexPath)
-//        let cell6 = tableView.dequeueReusableCell(withIdentifier: "cell6", for: indexPath)
 //
 //
 //        switch Sections.self = state {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Uf-g3-sKH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gp5-t6-paA">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstCell" rowHeight="76" id="Gxq-RH-Wl7">
-                                <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FirstCell" rowHeight="70" id="Gxq-RH-Wl7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gxq-RH-Wl7" id="QuT-dq-FjN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="347.66666666666669" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9c-Rd-Smf">
-                                            <rect key="frame" x="20" y="17" width="339" height="38"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9c-Rd-Smf">
+                                            <rect key="frame" x="20" y="17" width="319.66666666666669" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="374" id="j1N-1o-aiX"/>
                                                 <constraint firstAttribute="height" constant="38" id="w42-94-D1C"/>
@@ -44,14 +44,6 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="j8g-Rc-KjM" userLabel="PhoneAuth">
-                                <rect key="frame" x="0.0" y="104" width="375" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j8g-Rc-KjM" id="e8u-NX-stk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="d9g-Oj-M2s" id="llk-5a-DSg"/>
@@ -67,7 +59,7 @@
         <!--Static TableView-->
         <scene sceneID="kJ0-IB-TcF">
             <objects>
-                <tableViewController id="Vgb-yg-7T2" customClass="StaticTableViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="StaticTableViewController" id="Vgb-yg-7T2" customClass="StaticTableViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6EY-5J-NtG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +279,7 @@
         <!--FireBase Auth-->
         <scene sceneID="32N-uL-wNw">
             <objects>
-                <viewController id="IyK-U9-l6G" customClass="FirebaseAuthenticationViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirebaseAuthenticationViewController" id="IyK-U9-l6G" customClass="FirebaseAuthenticationViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Axh-ht-AxE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,7 +346,7 @@
         <!--In app notification-->
         <scene sceneID="DEt-3E-JyS">
             <objects>
-                <viewController id="R8l-Yp-Tln" customClass="InAppNotificationViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InAppNotificationViewController" id="R8l-Yp-Tln" customClass="InAppNotificationViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7oh-FI-f42">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,7 +443,7 @@
         <!--Delegate-->
         <scene sceneID="4so-KR-lB2">
             <objects>
-                <viewController id="G48-7n-NKk" customClass="DelegateViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DelegateViewController" id="G48-7n-NKk" customClass="DelegateViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t7p-p8-Ina">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -513,7 +505,7 @@
         <!--Stackview-->
         <scene sceneID="1pe-za-jH5">
             <objects>
-                <viewController id="Fy0-IG-IHn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Stackview" id="Fy0-IG-IHn" customClass="StackviewViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxB-nM-YdV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -600,10 +592,10 @@
             </objects>
             <point key="canvasLocation" x="1933.5999999999999" y="1266.5024630541873"/>
         </scene>
-        <!--Data in cell-->
+        <!--Cell in table view-->
         <scene sceneID="bgW-N4-HFD">
             <objects>
-                <tableViewController id="vNZ-yb-D3o" customClass="CellInArrayTableViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CellInArrayTableViewController" id="vNZ-yb-D3o" customClass="CellInArrayTableViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NQQ-43-dfE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -635,7 +627,7 @@
                             <outlet property="delegate" destination="vNZ-yb-D3o" id="cK1-bK-baE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Data in cell" id="Nam-gc-7UW"/>
+                    <navigationItem key="navigationItem" title="Cell in table view" id="Nam-gc-7UW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4L-v1-h0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -644,7 +636,7 @@
         <!--Dynamic Cell-->
         <scene sceneID="W1j-Ph-iAD">
             <objects>
-                <viewController id="shR-KK-v6d" customClass="DynamicCellViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DynamicCell" id="shR-KK-v6d" customClass="DynamicCellViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gqb-Fz-Mqt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -719,7 +711,7 @@
         <!--Local Notification-->
         <scene sceneID="YwG-73-0fk">
             <objects>
-                <viewController id="Okt-qH-npY" customClass="LocalNotificationViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocalNotificationViewController" id="Okt-qH-npY" customClass="LocalNotificationViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X1m-UM-YVl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -754,7 +746,7 @@
         <!--xib with api calls-->
         <scene sceneID="wTY-k6-GJD">
             <objects>
-                <tableViewController id="pqW-To-Klj" customClass="TableViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CellInTableView" id="pqW-To-Klj" customClass="TableViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NG0-OG-SAF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

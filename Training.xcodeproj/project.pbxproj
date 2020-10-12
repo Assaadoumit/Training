@@ -28,6 +28,7 @@
 		801D105C252FD76800B23168 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 801D105B252FD76800B23168 /* MyLibrary */; };
 		801D10672533CE6100B23168 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D10662533CE6100B23168 /* DelegateViewController.swift */; };
 		801D106C2533CE7500B23168 /* DelegateSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D106B2533CE7500B23168 /* DelegateSecondViewController.swift */; };
+		801D107125350C4D00B23168 /* StackviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D107025350C4D00B23168 /* StackviewViewController.swift */; };
 		80C01838251FDC7800CB8B7F /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */; };
 		80ED319C2519F8E50034915A /* CellInarrayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED319B2519F8E50034915A /* CellInarrayTableViewCell.swift */; };
 		80ED31A9251A04430034915A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED31A7251A04430034915A /* TableViewCell.swift */; };
@@ -86,6 +87,7 @@
 		801D103F252FD5B800B23168 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyLibrary; sourceTree = "<group>"; };
 		801D10662533CE6100B23168 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 		801D106B2533CE7500B23168 /* DelegateSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateSecondViewController.swift; sourceTree = "<group>"; };
+		801D107025350C4D00B23168 /* StackviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackviewViewController.swift; sourceTree = "<group>"; };
 		80C01837251FDC7800CB8B7F /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 		80C018422521E00300CB8B7F /* Training.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Training.entitlements; sourceTree = "<group>"; };
 		80ED319B2519F8E50034915A /* CellInarrayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInarrayTableViewCell.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				800BEA172516B83900E60DE5 /* SceneDelegate.swift */,
 				800BEA1B2516B83900E60DE5 /* Main.storyboard */,
 				800BEA192516B83900E60DE5 /* FirstScrennTableView.swift */,
+				801D107025350C4D00B23168 /* StackviewViewController.swift */,
 				800BEA1E2516B83A00E60DE5 /* Assets.xcassets */,
 				800BEA202516B83A00E60DE5 /* LaunchScreen.storyboard */,
 				800BEA232516B83A00E60DE5 /* Info.plist */,
@@ -573,6 +576,7 @@
 				80ED323E251E027D0034915A /* CellData.swift in Sources */,
 				80ED31B3251A04680034915A /* TableViewController.swift in Sources */,
 				80ED3214251CB56D0034915A /* DynamicCellViewController.swift in Sources */,
+				801D107125350C4D00B23168 /* StackviewViewController.swift in Sources */,
 				800CDAFC252A9668001C4DE4 /* StaticTableViewController.swift in Sources */,
 				800CDB0C252F0815001C4DE4 /* InAppNotificationViewController.swift in Sources */,
 				800BEA182516B83900E60DE5 /* SceneDelegate.swift in Sources */,

@@ -32,7 +32,7 @@ class CellInArrayTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell") as? CellInarrayTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? CellInarrayTableViewCell
         cell?.importData(nameArray[indexPath.row])
         return cell!
     }
