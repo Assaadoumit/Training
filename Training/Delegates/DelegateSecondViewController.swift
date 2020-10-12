@@ -8,14 +8,25 @@
 import UIKit
 
 class DelegateSecondViewController: UIViewController {
-
+    
+    var delegateSecondViewControllerDelageta: DelegateSecondViewControllerDelageta?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
     
     @IBAction func sendWithDelegates(_ sender: UIButton){
+        let message = "Test"
+        delegateSecondViewControllerDelageta?.didSendMessage(message)
         
+        navigationController?.popViewController(animated: true)
     }
+}
+
+protocol DelegateSecondViewControllerDelageta {
+    func didSendMessage(_ messege : String)
+    
+    
 }

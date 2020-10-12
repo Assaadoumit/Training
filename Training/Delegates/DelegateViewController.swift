@@ -7,19 +7,30 @@
 
 import UIKit
 
-class DelegateViewController: UIViewController {
-
+class DelegateViewController: UIViewController{
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     @IBOutlet weak var label:UILabel!
     
     @IBAction func nextButonPressed(_ sender:UIButton){
-        
+        let vc = self.storyboard?.instantiateViewController(identifier: "DelegateSecondViewController") as! DelegateSecondViewController
+        vc.delegateSecondViewControllerDelageta = self
+        navigationController?.pushViewController(vc, animated: true)
     }
-
+    
+}
+extension DelegateViewController : DelegateSecondViewControllerDelageta{
+    func didSendMessage(_ messege: String) {
+        label.text = messege
+    }
+    
+    
 }

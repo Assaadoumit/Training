@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B54-ZX-Czt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Uf-g3-sKH">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -487,7 +487,7 @@
         <!--Delegate Second Screen-->
         <scene sceneID="8xQ-dX-88K">
             <objects>
-                <viewController id="vBe-eg-RBC" customClass="DelegateSecondViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DelegateSecondViewController" id="vBe-eg-RBC" customClass="DelegateSecondViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OUb-jl-9Ec">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -496,6 +496,9 @@
                                 <rect key="frame" x="137" y="391" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Delegate"/>
+                                <connections>
+                                    <action selector="sendWithDelegates:" destination="vBe-eg-RBC" eventType="touchUpInside" id="wZZ-D1-Ibz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Ch-gD-UIW"/>
