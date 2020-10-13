@@ -271,6 +271,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Static TableView" id="Laa-yS-7Hy"/>
+                    <connections>
+                        <outlet property="Label_name" destination="UJN-po-6Oe" id="RLG-SZ-38t"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olz-UR-2ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

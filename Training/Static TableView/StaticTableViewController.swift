@@ -19,10 +19,11 @@ class StaticTableViewController: UITableViewController {
         
     }
     
-    enum Sections : Any {
-        case oneSection
-        case twoSections
-        case threeSections
+    
+    enum Sections : String {
+        case firstSection = "assaad"
+        case SecondSection = "assaad1"
+        
     }
     
     
@@ -70,13 +71,14 @@ class StaticTableViewController: UITableViewController {
     
     @IBAction func changeWithEnum(_ sender:Any){
         
-        
+        setUpEnum()
     }
-    @IBAction func changeCase1(_ sender:Any){
-        
-        
+   
+    func setUpEnum(){
+        if Sections.firstSection != nil{
+            Label_name.text = Sections.firstSection.rawValue
+        }
+            
     }
-    
-    
     
 }

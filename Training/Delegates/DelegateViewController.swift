@@ -22,10 +22,16 @@ class DelegateViewController: UIViewController{
     
     @IBAction func nextButonPressed(_ sender:UIButton){
         let vc = self.storyboard?.instantiateViewController(identifier: "DelegateSecondViewController") as! DelegateSecondViewController
+        
         vc.delegateSecondViewControllerDelageta = self
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+//    func completion(){
+//        let vc = self.storyboard?.instantiateViewController(identifier: "DelegateSecondViewController") as! DelegateSecondViewController
+//        vc.completionHandler = { text in
+//            self.label.text = text
+//        }
+//    }
 }
 extension DelegateViewController : DelegateSecondViewControllerDelageta{
     func didSendMessage(_ messege: String) {

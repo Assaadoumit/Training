@@ -16,13 +16,17 @@ class DelegateSecondViewController: UIViewController {
         
         
     }
+    let message = "Test"
     
     @IBAction func sendWithDelegates(_ sender: UIButton){
-        let message = "Test"
+        
         delegateSecondViewControllerDelageta?.didSendMessage(message)
         
         navigationController?.popViewController(animated: true)
+        completionHandler?(message)
     }
+    
+    public var completionHandler :((String?)-> Void)?
 }
 
 protocol DelegateSecondViewControllerDelageta {
