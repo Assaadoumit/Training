@@ -17,13 +17,13 @@ class DelegateSecondViewController: UIViewController {
         
     }
     let message = "Test"
-    
+    let messageCompletionHandler = "messageCompletionHandler"
     @IBAction func sendWithDelegates(_ sender: UIButton){
         
         delegateSecondViewControllerDelageta?.didSendMessage(message)
         
         navigationController?.popViewController(animated: true)
-        completionHandler?(message)
+        completionHandler?(messageCompletionHandler)
     }
     
     public var completionHandler :((String?)-> Void)?
