@@ -18,6 +18,7 @@ class FirstScrennTableView: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        // using my library
         
         let randomString = randomGenerator.string()
         let randomInt = randomGenerator.number()
